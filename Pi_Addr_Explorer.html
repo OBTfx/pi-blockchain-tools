@@ -2,9 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
     <title>Pi Address Explorer</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7L3CXQHSM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C7L3CXQHSM');
+    </script> -->
     <!-- Importing jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Importing web3.js client -->
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.0/dist/web3.min.js"></script>
     <!-- Establishment of routines and functions -->
@@ -313,7 +323,7 @@
         /* font-weight: bold; */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: lightgray;
-        border: 1;
+        border: 1em;
         color: black;
         padding: 5px 10px;
         text-align: center;
@@ -367,10 +377,10 @@
       <br>
       <!-- Network selection -->
       <input type="radio" name="myChain" value="currentNet" checked>
-      <a href="https://blockexplorer.pichain.io/" target="_blank"><b> Pi Main Network </b><img border="0" alt="Block explorer" src="https://en.wikipedia.org/w/skins/Vector/images/external-link-ltr-icon.png"></a>
+      <a href="https://blockexplorer.pichain.io/" target="_blank"><b> Pi Main Network </b><img border="0" alt="Block explorer" src="assets/icons/external-link-ltr-icon.png"></a>
       <br>
       <input type="radio" name="myChain" value="previousNet">
-      <a href="https://blockexplorer-original.pichain.io/" target="_blank"><b> Pi Previous Network </b><img border="0" alt="Old Block Explorer" src="https://en.wikipedia.org/w/skins/Vector/images/external-link-ltr-icon.png"></a>
+      <a href="https://blockexplorer-original.pichain.io/" target="_blank"><b> Pi Previous Network </b><img border="0" alt="Old Block Explorer" src="assets/icons/external-link-ltr-icon.png"></a>
       <br>
       <br>
       <!-- Token list -->
@@ -411,17 +421,17 @@
       <!-- Entering values for arguments -->
       <input class="form-control" type="text" name="" value="" id="addr_contract" size="42" maxlength="42" placeholder="eg: 0x14af2...   <42 digits>" pattern="[A-Fa-f0-9x-x]{42}" title="Token contract"> Token Contract (address)<br>
       <input class="form-control" type="text" name="" value="" id="addr_review" size="42" maxlength="42" placeholder="eg: 0x30f92...   <42 digits>" pattern="[A-Fa-f0-9x-x]{42}"  title="Wallet address (to:)" list="addresses"> Wallet address to check<br>
-        <datalist id="addresses">
-          <option value="0x917a8d3415f5fe494ddfb029cb0dfdfb242b6942">PiDEX</option>
-          <option value="0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513">Brigde</option>
-          <option value="0x0000000000000000000000000000000000000009">Block rewards</option>
-          <option value="0x0000000000000000000000000000000000000010">Pi issuing contract</option>
-          <option value="0x0000000000000000000000000000000000000012">Collected by nodes</option>
-          <!-- <option value="0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a">EuroPillon</option>
-          <option value="0xA22E777556ca0149B6754C918c2115898A5C95Cd">EuroPillon Inverse</option> -->
-        </datalist>
-      <input class="form-control" type="text" name="" value="" id="addr_from" size="42" maxlength="42" placeholder="eg: 0x13f74...   <42 digits>" pattern="[A-Fa-f0-9x-x]{42}" title="Address (from:)"> Address from<br>
+      <input class="form-control" type="text" name="" value="" id="addr_from" size="42" maxlength="42" placeholder="eg: 0x13f74...   <42 digits>" pattern="[A-Fa-f0-9x-x]{42}" title="Address (from:)" list="addresses"> Address from<br>
       <input class="form-control" type="text" name="" value="" id="back_blocks" size="10" maxlength="42" placeholder="eg: 31075" pattern="[0-9]{42}" title="Back blocks"> Back blocks or <input class="form-control" type="text" name="" value="" id="back_days" size="10" maxlength="42" placeholder="eg: 365" pattern="[0-9]{42}" title="Back dayss"> Back days
+      <datalist id="addresses">
+        <option value="0x917a8d3415f5fe494ddfb029cb0dfdfb242b6942">PiDEX</option>
+        <option value="0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513">Brigde</option>
+        <option value="0x0000000000000000000000000000000000000009">Block rewards</option>
+        <option value="0x0000000000000000000000000000000000000010">Pi issuing contract</option>
+        <option value="0x0000000000000000000000000000000000000012">Collected by nodes</option>
+        <!-- <option value="0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a">EuroPillon</option>
+        <option value="0xA22E777556ca0149B6754C918c2115898A5C95Cd">EuroPillon Inverse</option> -->
+      </datalist>
       <br>
       <br>
       <!-- Buttons -->
