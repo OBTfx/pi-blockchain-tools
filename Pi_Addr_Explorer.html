@@ -116,7 +116,6 @@
                       // var value = web3.utils.hexToNumberString(tx.returnValues.value);
                       var value = tx.returnValues.value;
                       // var theValue = valueToBalance(value, 18, web3);
-                      console("typeof: " + typeof(value));
                       var theValue = web3.utils.fromWei(value);
                       var txUrl = urlEXPLORER+"tx/"+tx.transactionHash;
                       var inp = document.getElementById("txs").innerHTML;
@@ -150,7 +149,8 @@
                   web3.eth.getBalance(String(walletADDRESS)).then(balance => {
                     // var myBalance = (parseFloat(balance)/myDivider).toFixed(18);
                     // var myBalance = valueToBalance(balance, myDecimals, web3);
-                    var myBalance = valueToBalance(balance, 18, web3);
+                    // var myBalance = valueToBalance(balance, 18, web3);
+                    var myBalance = web3.utils.fromWei(balance);
                     var inp = document.getElementById("txs").innerHTML;
                     document.getElementById("txs").innerHTML = inp + "Balance: " + myBalance + " " + " PI<br>";
                     var strOut = "Balance: " + myBalance + " PI [value: " + balance + "]";
@@ -163,7 +163,8 @@
                     myCONTRACT.methods.balanceOf(walletADDRESS).call().then(balance => {
                       // var myBalance = (parseFloat(balance)/myDivider).toFixed(18);
                       // var myBalance = valueToBalance(balance, myDecimals, web3);
-                      var myBalance = valueToBalance(balance, 18, web3);
+                      // var myBalance = valueToBalance(balance, 18, web3);
+                      var myBalance = web3.utils.fromWei(balance);
                       var inp = document.getElementById("txs").innerHTML;
                       document.getElementById("txs").innerHTML = inp + "Balance: " + myBalance + " " + mySymbol + "<br>";
                       var strOut = "Balance: " + myBalance + " " + mySymbol + " [value: " + balance + "]";
@@ -200,7 +201,8 @@
                       if(balance != 0) {
                         // var myPI = (parseFloat(balance)/myDivider).toFixed(18);
                         // var myPI = valueToBalance(balance, myDecimals, web3);
-                        var myPI = valueToBalance(balance, 18, web3);
+                        // var myPI = valueToBalance(balance, 18, web3);
+                        var myPI = web3.utils.fromWei(balance);
                         var inp = document.getElementById("txs").innerHTML;
                         document.getElementById("txs").innerHTML = inp + "#" + rowCount + mySpace1 + "Balance: " + myPI + " PI<br>";
                         var strOut = "#" + rowCount + " - Balance: " + myPI + " PI [value: " + balance + "]";
@@ -216,7 +218,8 @@
                         rowCount++;
                         // var myBalance = (parseFloat(balance)/myDivider).toFixed(18);
                         // var myBalance = valueToBalance(balance, myDecimals, web3);
-                        var myBalance = valueToBalance(balance, 18, web3);
+                        // var myBalance = valueToBalance(balance, 18, web3);
+                        var myBalance = web3.utils.fromWei(balance);
                         var inp = document.getElementById("txs").innerHTML;
                         document.getElementById("txs").innerHTML = inp + "#" + rowCount + mySpace1 + "Balance: " + myBalance + " " + mySymbol + "<br>";
                         var strOut = "#" + rowCount + " - Balance: " + myBalance + " " + mySymbol + " [value: " + balance + "]";
