@@ -14,13 +14,13 @@
 0x0000000000000000000000000000000000000015	<> (NPI)
 0x917a8d3415f5fe494ddfb029cb0dfdfb242b6942	PiDEX (Smart contract of the decentralized exchanger)
 0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513	Gateway (Brigde between PiCEX and PiDEX)
-0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a  PiLotto (Pi Casino)
-0xA22E777556ca0149B6754C918c2115898A5C95Cd  PiLotto Inverse (Pi Casino)
+0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a	PiLotto (Pi Casino)
+0xA22E777556ca0149B6754C918c2115898A5C95Cd	PiLotto Inverse (Pi Casino)
 
 [p2p]
-0xd7D0D606647D98Dc844a7dea00c0861E7215db7f  [VESx] Inversiones Venepi, C.A. / J-41294238-7 / depositos@venepi.org
-0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513  [EURx] Midlantic Technologies S.L. / X / banca@piexchange.io
-0xcf98E77d3b663c58f4C262DA12D6b3b749BE4B10  [COLx] Wilmer Armando Campos Rodríguez / 1.090.388.741 / inversiones_colpi@protonmail.com
+0xd7D0D606647D98Dc844a7dea00c0861E7215db7f	[VESx] Inversiones Venepi, C.A. / J-41294238-7 / depositos@venepi.org
+0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513	[EURx] Midlantic Technologies S.L. / X / banca@piexchange.io
+0xcf98E77d3b663c58f4C262DA12D6b3b749BE4B10	[COLx] Wilmer Armando Campos Rodríguez / 1.090.388.741 / inversiones_colpi@protonmail.com
 
 ---              Contract              ---
 ------------------------------------------
@@ -50,7 +50,7 @@
 0x4DFC34E47db2e3E1C1b1BABd7d0352375edAeC74	PKV9000 (PKVMONEY)
 0xF56D11Cce74759D81Ee574c6b47f4d6be3891664	BULL (Bull Income Fund)
 0x67f3C0b9ABdFCBDC035E4D9845Ce60d02CCd3311	PoPiC (PoPiC)
-0xc5aD00Cb18F2868888D091637b4f4A84992CA37E  LCx (LCCx)
+0xc5aD00Cb18F2868888D091637b4f4A84992CA37E	LCx (LCCx)
 
 [7][node_pool]
 0x0e435Ad350B3C135e9C1737Efff180b24138953D	Pedrox (Pedro)
