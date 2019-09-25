@@ -116,12 +116,14 @@
                       // var value = web3.utils.hexToNumberString(tx.returnValues.value);
                       var value = tx.returnValues.value;
                       var theValue = valueToBalance(value, 18, web3);
-                      // var theValue = web3.utils.fromWei(value);
+                      var from_Wei = web3.utils.fromWei(value);
+                      var hex_toNum = web3.utils.hexToNumberString(value);
                       // console.log(tx.raw.data + " typeof " + typeof(tx.raw.data) + " isHexStrict " + web3.utils.isHexStrict(tx.raw.data));
                       var txUrl = urlEXPLORER+"tx/"+tx.transactionHash;
                       var inp = document.getElementById("txs").innerHTML;
                       document.getElementById("txs").innerHTML = inp + "<p>#" + rowCount + mySpace1 + "Block: " + tx.blockNumber + mySpace1 + "Hash: <a href='" + txUrl + "' target='_blank'>" + tx.transactionHash + "</a><br>from: " + tx.returnValues.from + mySpace1 + "to: " + tx.returnValues.to + mySpace1 + "value: " + theValue + "</p>";
-                      var strOut = "#" + rowCount + " - Block: " + tx.blockNumber + " - urlHash: " + txUrl + " from: " + tx.returnValues.from + " to: " + tx.returnValues.to + " value: " + theValue + "(" + value + ")";
+                      // var strOut = "#" + rowCount + " - Block: " + tx.blockNumber + " - urlHash: " + txUrl + " from: " + tx.returnValues.from + " to: " + tx.returnValues.to + " value: " + theValue + "(" + value + ")";
+                      var strOut = "#" + rowCount + " value: " + theValue + "(" + value + ")  -  hexToNumber: " + (parseFloat(hex_toNum)/1e18).toFixed(18) + "  -  fromWei: " + Number(from_Wei).toFixed(18);
                       console.log(strOut);
                     }
                   });
@@ -408,6 +410,7 @@
         <option value="0x4DFC34E47db2e3E1C1b1BABd7d0352375edAeC74">PKV9000 (PKVMONEY)</option>
         <option value="0xF56D11Cce74759D81Ee574c6b47f4d6be3891664">BULL (Bull Income Fund)</option>
         <option value="0x67f3C0b9ABdFCBDC035E4D9845Ce60d02CCd3311">PoPiC (PoPiC)</option>
+        <option value="0xc5aD00Cb18F2868888D091637b4f4A84992CA37E">LCx (LCCx)</option>
         <option disabled value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNODES POOL</option>
         <option value="0x0e435Ad350B3C135e9C1737Efff180b24138953D">Pedrox (Pedro)</option>
         <option value="0xdd71103F04913Ce28D1DE36DE92F56cE9695dbE5">CTO (CUTUTONUDEX)</option>
@@ -435,8 +438,11 @@
         <option value="0x0000000000000000000000000000000000000009">Block rewards</option>
         <option value="0x0000000000000000000000000000000000000010">Pi issuing contract</option>
         <option value="0x0000000000000000000000000000000000000012">Collected by nodes</option>
-        <!-- <option value="0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a">EuroPillon</option>
-        <option value="0xA22E777556ca0149B6754C918c2115898A5C95Cd">EuroPillon Inverse</option> -->
+        <option value="0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a">EuroPillon</option>
+        <option value="0xA22E777556ca0149B6754C918c2115898A5C95Cd">EuroPillon Inverse</option>
+        <option value="0xd7D0D606647D98Dc844a7dea00c0861E7215db7f">VENEPI</option>
+        <option value="0xcf98E77d3b663c58f4C262DA12D6b3b749BE4B10">COLPI</option>
+        <option value="0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513">ASESPI</option>
       </datalist>
       <br>
       <br>
