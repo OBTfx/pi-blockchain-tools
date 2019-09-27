@@ -30,6 +30,7 @@
 0x7338d69EE40E733B44a269DA95d0620d565Fe895	BULL (BULL)
 0x2fB77A3B01d5Ca009bC5c6d3c707ba7D50c45E7d	PoPiC (PoPiC)
 0x<         pending to determine         >	LCx (LCCx)
+0x2fB77A3B01d5Ca009bC5c6d3c707ba7D50c45E7d  PoPiC (PiNODEx)
 
 [p2p]
 0xd7D0D606647D98Dc844a7dea00c0861E7215db7f	[VESx] Inversiones Venepi, C.A. / J-41294238-7 / depositos@venepi.org
@@ -103,4 +104,3 @@
 ---               Assets               ---
 ------------------------------------------
 0xdac17f958d2ee523a2206206994597c13d831ec7	USDT (Tether)	maxSupply: 1965057493.363429
-
