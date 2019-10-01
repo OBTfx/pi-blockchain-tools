@@ -5,14 +5,14 @@
 ---               Wallet               ---
 ------------------------------------------
 [refunds addresses]
-0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513	Gateway (Brigde between PiCEX and PiDEX)
+0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513	Gateway (Brigde between PiCEx and PiDEx)
 
 [custody address]
 0x0000000000000000000000000000000000000009	PiChainBlockReward (Commissions to be distributed)
 0x0000000000000000000000000000000000000010	Emisor (Pi issuer contract)
 0x0000000000000000000000000000000000000012	ManageNodes (Purchase/Sale of nodes)
 0x0000000000000000000000000000000000000015	<> (NPI)
-0x917a8d3415f5fe494ddfb029cb0dfdfb242b6942	PiDEX (Smart contract of the decentralized exchanger)
+0x917a8d3415f5fe494ddfb029cb0dfdfb242b6942	PiDEx (Smart contract of the decentralized exchanger)
 0x4535E0F7F4AA8216d1575F6B96Ed18013A8b7513	Gateway (Brigde between PiCEX and PiDEX)
 0x2762c01534b75D4453c262D95Ae9f1d5c4fAC81a	PiLotto (Pi Casino)
 0xA22E777556ca0149B6754C918c2115898A5C95Cd	PiLotto Inverse (Pi Casino)
@@ -29,7 +29,7 @@
 0x7fb8Bc4C0d1b18D381858489d93428c384EA7ed0	PKV9000 (PKVMONEY)
 0x7338d69EE40E733B44a269DA95d0620d565Fe895	BULL (BULL)
 0x2fB77A3B01d5Ca009bC5c6d3c707ba7D50c45E7d	PoPiC (PoPiC)
-0x<         pending to determine         >	LCx (LCCx)
+0x2fB77A3B01d5Ca009bC5c6d3c707ba7D50c45E7d	LCx (LCCx)
 
 [p2p]
 0xd7D0D606647D98Dc844a7dea00c0861E7215db7f	[VESx] Inversiones Venepi, C.A. / J-41294238-7 / depositos@venepi.org
